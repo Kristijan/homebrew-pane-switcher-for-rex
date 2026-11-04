@@ -24,12 +24,14 @@ Open **Pane Switcher for Rex** from Applications and follow the setup wizard. Se
 
 ## Upgrade
 
-Quit Pane Switcher for Rex before upgrading:
+To upgrade:
 
 ```sh
 brew update
 brew upgrade --cask kristijan/pane-switcher-for-rex/pane-switcher-for-rex
 ```
+
+Homebrew handles quitting the app during the upgrade and may reopen it afterward. If it remains closed, open **Pane Switcher for Rex** from Applications.
 
 The application has no self-updater. Homebrew installs prebuilt, signed and notarized Apple Silicon releases; it does not compile the application locally.
 
@@ -55,6 +57,6 @@ brew untap kristijan/pane-switcher-for-rex
 
 ## Maintenance and support
 
-The application repository's release workflow proposes cask updates here as draft pull requests. Review the version, download URL, and ZIP checksum, and publish the corresponding application release before merging its cask update. Release assets remain in the application repository; this tap needs no Apple signing or notarization credentials.
+The application repository's release workflow proposes cask updates here as ready-for-review pull requests. Review the version, download URL, and ZIP checksum, and publish the corresponding application release before merging its cask update. Release assets remain in the application repository; this tap needs no Apple signing or notarization credentials.
 
 See the [release guide](https://github.com/Kristijan/pane-switcher-for-rex/blob/main/RELEASING.md) for maintainer setup and the release procedure. Report application problems in the [application issue tracker](https://github.com/Kristijan/pane-switcher-for-rex/issues).
